@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const navMain = [
   {
-    title: "New Note",
+    title: "Create Note",
     url: "/dashboard/new/note",
     icon: Pen,
   },
@@ -26,15 +26,20 @@ const navMain = [
 export function NavMain() {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Organize</SidebarGroupLabel>
+      <SidebarGroupLabel className="text-lg font-semibold mb-4">
+        Add New
+      </SidebarGroupLabel>
       <SidebarMenu className="flex w-full flex-col gap-2">
         {navMain.map((item) => (
           <SidebarMenuItem
-            className="border border-neutral-300  rounded"
+            className="flex items-center justify-start  "
             key={item.title}
           >
             <Link className="" href={item.url}>
-              <SidebarMenuButton tooltip={item.title}>
+              <SidebarMenuButton
+                className="bg-linear-to-r text-md text-neutral-50 from-black to-blue-400 rounded"
+                tooltip={item.title}
+              >
                 {item.icon && <item.icon />}
                 <span>{item.title}</span>
               </SidebarMenuButton>

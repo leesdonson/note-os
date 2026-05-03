@@ -39,7 +39,9 @@ export function RecentlyAdded({
 
   return (
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-      <SidebarGroupLabel>Recently Added Folders/Notes</SidebarGroupLabel>
+      <SidebarGroupLabel className="text-lg font-semibold">
+        Recently Added Files
+      </SidebarGroupLabel>
       <SidebarMenu>
         {recentFiles.map((item) => (
           <SidebarMenuItem key={item.name}>
