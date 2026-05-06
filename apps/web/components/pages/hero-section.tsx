@@ -44,7 +44,7 @@ export const HeroSection = () => {
         <Logo />
 
         <Link href={"/auth/sign-in"}>
-          <button className="rounded-full bg-white/10 px-6 py-2 text-sm font-medium transition-colors hover:bg-white/20 border border-white/10">
+          <button className="rounded-full bg-white/10 px-6 py-2  font-medium transition-colors hover:bg-white/20 border border-white/10">
             Login
           </button>
         </Link>

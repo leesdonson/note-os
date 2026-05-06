@@ -17,9 +17,9 @@ import { NoteOSLogo } from "./noteos-logo";
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
+    name: "NoteOS",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatar.png",
   },
   projects: [
     {
