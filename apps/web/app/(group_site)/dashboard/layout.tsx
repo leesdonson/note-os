@@ -39,7 +39,7 @@ export default function DashboardLayout({
           </div>
         </header>
         {/* main dashboard content */}
-        <div className="overflow-y-auto p-2">{children}</div>
+        <div className="overflow-y-auto p-1 sm:p-2">{children}</div>
       </SidebarInset>
     </SidebarProvider>
   );

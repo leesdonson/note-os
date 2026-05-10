@@ -135,4 +135,7 @@
   .default {
     @apply bg-neutral-50 rounded-md p-2;
   }
+  .heading {
+    @apply text-2xl font-bold;
+  }
 }
